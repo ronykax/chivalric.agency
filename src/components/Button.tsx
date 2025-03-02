@@ -1,13 +1,28 @@
+import React from "react";
+import CirclePlaceholderOn from "./icons/circle-placeholder-on";
+
 interface Props {
     label: string;
     style: "primary" | "secondary";
     color: "brand" | "black" | "white";
     size: "rg" | "lg";
+    icon?: React.JSX.Element;
+    width?: "full" | "fit";
+    type?: HTMLButtonElement["type"];
 }
 
-export default function Button({ label, style, color, size }: Props) {
+export default function Button({
+    label,
+    style,
+    color,
+    size,
+    icon,
+    width = "fit",
+    type = "button",
+}: Props) {
     return (
         <button
+            type={type}
             className={`${
                 style === "primary"
                     ? color === "brand"
@@ -29,11 +44,15 @@ export default function Button({ label, style, color, size }: Props) {
                         : size === "lg" && "px-4 py-3"
                     : style === "secondary" &&
                       (size === "rg" ? "px-3 py-1" : "px-3 py-2")
-            } ${
-                size === "rg" ? "text-rg" : size === "lg" && "text-lg"
-            } font-league uppercase`}
+            } ${size === "rg" ? "text-rg" : size === "lg" && "text-lg"} ${
+                width === "full" ? "w-full" : width === "fit" && "w-fit"
+            }
+            font-league uppercase flex justify-center`}
         >
-            {label}
+            <div className="flex gap-2 items-center">
+                {label}
+                {icon}
+            </div>
         </button>
     );
 }
