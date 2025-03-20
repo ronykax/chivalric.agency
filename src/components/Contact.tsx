@@ -12,7 +12,7 @@ export default function Contact() {
 
     return (
         <div className="bg-brand flex flex-col">
-            <div className="flex flex-col gap-6 p-12 lg:px-48">
+            <div className="flex flex-col gap-6 p-12 t:px-48">
                 <div className="uppercase font-league text-2xl text-black leading-2xl">
                     Let's get in{" "}
                     <span className="font-garamond lowercase italic">
@@ -26,7 +26,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="flex px-12 pb-12 lg:px-48">
+            <div className="flex px-12 pb-12 t:px-48">
                 <form
                     className="flex flex-col gap-4 w-full"
                     onSubmit={handleSubmit}

@@ -2,7 +2,7 @@ import React from "react";
 import CirclePlaceholderOn from "./icons/circle-placeholder-on";
 
 interface Props {
-    label: string;
+    label?: string;
     style: "primary" | "secondary";
     color: "brand" | "black" | "white";
     size: "rg" | "lg";
@@ -50,7 +50,7 @@ export default function Button({
             font-league uppercase flex justify-center`}
         >
             <div className="flex gap-2 items-center">
-                {label}
+                {label && label}
                 {icon}
             </div>
         </button>

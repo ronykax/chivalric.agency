@@ -27,11 +27,19 @@ export default {
             brand: "#229bf3",
             brand2: "#0C5FD5",
             brand3: "#0930A4",
-            transparent: "transparent"
+            transparent: "transparent",
         },
         fontFamily: {
             league: ["League Gothic", "sans-serif"],
             garamond: ["EB Garamond", "serif"],
+        },
+        screens: {
+            m: "400px",
+            t: "800px",
+            d: "1200px",
+        },
+        backgroundImage: {
+            management: "url(/branding/service-card-management.png)"
         }
     },
     plugins: [],

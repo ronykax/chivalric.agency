@@ -4,7 +4,7 @@ import ServiceCard from "./service-card";
 export default function Services() {
     return (
         <div className="bg-white flex flex-col">
-            <div className="flex flex-col gap-6 px-12 py-12 lg:px-48">
+            <div className="flex flex-col gap-6 px-12 py-12 t:px-48">
                 <div className="uppercase font-league text-2xl text-black leading-2xl">
                     Build something{" "}
                     <span className="font-garamond lowercase italic">
@@ -18,26 +18,30 @@ export default function Services() {
                 </div>
             </div>
 
-            <div className="flex px-12 lg:px-48 pb-12 gap-12 overflow-x-scroll">
+            <div className="flex px-12 t:px-48 pb-12 gap-12 overflow-x-scroll overflow-hidden no-scrollbar">
                 <ServiceCard
                     heading="Management"
                     description="erm waht the sigm"
                     icon={<Shield />}
+                    bg="/branding/service-card-management.png"
+                />
+                <ServiceCard
+                    heading="Management"
+                    description="erm waht theefefe sigm"
+                    icon={<Shield />}
+                    bg="/branding//branding/service-card-management.png"
                 />
                 <ServiceCard
                     heading="Management"
                     description="erm waht the sigm"
                     icon={<Shield />}
+                    bg="/branding//branding/service-card-management.png"
                 />
                 <ServiceCard
                     heading="Management"
-                    description="erm waht the sigm"
+                    description="erm wefeaht the sigm"
                     icon={<Shield />}
-                />
-                <ServiceCard
-                    heading="Management"
-                    description="erm waht the sigm"
-                    icon={<Shield />}
+                    bg="/branding//branding/service-card-management.png"
                 />
             </div>
         </div>

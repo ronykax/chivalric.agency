@@ -1,7 +1,7 @@
 export default function Work() {
     return (
         <div className="bg-black flex flex-col">
-            <div className="flex flex-col gap-6 p-12 lg:px-48 text-white">
+            <div className="flex flex-col gap-6 p-12 t:px-48 text-white">
                 <div className="uppercase font-league text-2xl leading-2xl">
                     What we can do{" "}
                     <span className="font-garamond lowercase italic">
@@ -15,8 +15,8 @@ export default function Work() {
                 </div>
             </div>
 
-            <div className="flex px-12 pb-12 lg:px-48 gap-6 overflow-x-scroll">
-                {[...Array(3)].map((item, i) => (
+            <div className="flex px-12 pb-12 t:px-48 gap-6 overflow-x-scroll no-scrollbar">
+                {[...Array(10)].map((item, i) => (
                     <div className="h-36 min-w-64 relative" key={i}>
                         <img
                             className="w-full h-full absolute -bottom-2 -right-2"

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import PlusLarge from "./icons/plus-large";
 import React, { useState } from "react";
 
@@ -7,16 +8,22 @@ interface Props {
     heading: string;
     description: string;
     icon: React.JSX.Element;
+    bg: string;
 }
 
-export default function ServiceCard({ heading, description, icon }: Props) {
+export default function ServiceCard({ heading, description, icon, bg }: Props) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div
+            style={{
+                backgroundImage: !isOpen
+                    ? `url(${bg})`
+                    : "",
+            }}
             className={`h-96 ${
-                isOpen ? "bg-brand3" : "bg-brand2"
-            } duration-300 p-6 min-w-64 flex flex-col gap-6 shadow-brand2`}
+                isOpen && "bg-brand3"
+            } p-6 min-w-64 flex flex-col gap-6 shadow-brand2`}
         >
             <div className="flex justify-between">
                 {icon}
