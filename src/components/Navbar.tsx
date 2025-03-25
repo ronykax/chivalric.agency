@@ -2,13 +2,7 @@
 
 import { useState } from "react";
 import BarsThree from "./icons/bars-three";
-import HomeOpen from "./icons/home-open";
 import CrossLarge from "./icons/cross-large";
-import X from "./icons/x";
-import Bluesky from "./icons/bluesky";
-import Discord from "./icons/discord";
-import Behance from "./icons/behance";
-import Instagram from "./icons/instagram";
 import Button from "./Button";
 import ArrowRight from "./icons/arrow-right";
 import { items, socials } from "@/utils/links";
@@ -30,26 +24,29 @@ export default function Navbar() {
                 </button>
 
                 <div className="hidden t:block">
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 items-center">
                         {items.map(
                             (item, index) =>
                                 item.showOnDesktop && (
-                                    <Button
-                                        label={item.label}
-                                        style="secondary"
-                                        color="white"
-                                        size="rg"
-                                        key={index}
-                                    />
+                                    <a href={item.url} key={index}>
+                                        <Button
+                                            label={item.label}
+                                            style="secondary"
+                                            color="white"
+                                            size="rg"
+                                        />
+                                    </a>
                                 )
                         )}
-                        <Button
-                            label="Get in touch"
-                            style="primary"
-                            color="black"
-                            size="rg"
-                            icon={<ArrowRight />}
-                        />
+                        <a href="#contact">
+                            <Button
+                                label="Get in touch"
+                                style="primary"
+                                color="black"
+                                size="rg"
+                                icon={<ArrowRight />}
+                            />
+                        </a>
                     </div>
                 </div>
             </div>

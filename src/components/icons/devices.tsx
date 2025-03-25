@@ -1,4 +1,4 @@
-export default function SuitcaseWork() {
+export default function Devices() {
     return (
         <svg
             width="24"
@@ -7,10 +7,11 @@ export default function SuitcaseWork() {
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
         >
+            <path d="M19 17H16V19H19V17Z" fill="white" />
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"
-                d="M7 2H17V6H22V21H2V6H7V2ZM9 6H15V4H9V6Z"
+                d="M21 3H3V15H1V21H12V22H23V8H21V3ZM12 17H3V19H12V17ZM14 20H21V10H14V20Z"
                 fill="currentColor"
             />
         </svg>

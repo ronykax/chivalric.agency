@@ -9,19 +9,21 @@ export default function Footer() {
                 src="/branding/chivalric-wtrmrk-no.svg"
                 alt="logo"
             />
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 m:flex-row m:justify-between">
                 <span className="font-garamond text-lg leading-lg">
-                    All Rights Reserved © 2025
+                    All Rights Reserved ©<span className="m:block">2025</span>
                 </span>
-                {items.map((item, index) => (
-                    <a
-                        key={index}
-                        href="#"
-                        className="font-garamond text-lg leading-lg underline underline-offset-[3px] decoration-[1.5px]"
-                    >
-                        {item.label}
-                    </a>
-                ))}
+                <div className="mt-4 grid gap-4 gap-x-4 m:grid-cols-2">
+                    {items.map((item, index) => (
+                        <a
+                            key={index}
+                            href={item.url}
+                            className="font-garamond w-[200px] text-lg leading-lg underline underline-offset-[3px] decoration-[1.5px]"
+                        >
+                            {item.label}
+                        </a>
+                    ))}
+                </div>
             </div>
             <div className="flex justify-center">
                 <ul className="flex gap-1">

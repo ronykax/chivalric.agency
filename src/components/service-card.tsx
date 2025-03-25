@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import PlusLarge from "./icons/plus-large";
 import React, { useState } from "react";
 
@@ -23,7 +22,7 @@ export default function ServiceCard({ heading, description, icon, bg }: Props) {
             }}
             className={`h-96 ${
                 isOpen && "bg-brand3"
-            } p-6 min-w-64 flex flex-col gap-6 shadow-brand2`}
+            } p-6 min-w-64 max-w-64 flex flex-col gap-6 shadow-brand2`}
         >
             <div className="flex justify-between">
                 {icon}

@@ -11,10 +11,11 @@ export default function Contact() {
     };
 
     return (
-        <div className="bg-brand flex flex-col">
+        <section id="contact" className="bg-brand flex flex-col">
             <div className="flex flex-col gap-6 p-12 t:px-48">
                 <div className="uppercase font-league text-2xl text-black leading-2xl">
-                    Let's get in{" "}
+                    Let's get in
+                    <br />
                     <span className="font-garamond lowercase italic">
                         touch.
                     </span>
@@ -29,7 +30,9 @@ export default function Contact() {
             <div className="flex px-12 pb-12 t:px-48">
                 <form
                     className="flex flex-col gap-4 w-full"
-                    onSubmit={handleSubmit}
+                    // onSubmit={handleSubmit}
+                    action="/api/submit"
+                    method="POST"
                 >
                     <div className="flex gap-3 w-full">
                         <label className="font-league text-lg uppercase w-full">
@@ -37,6 +40,7 @@ export default function Contact() {
                             <input
                                 type="text"
                                 id="first-name"
+                                name="first-name"
                                 placeholder="John"
                                 className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
                             />
@@ -46,6 +50,7 @@ export default function Contact() {
                             <input
                                 type="text"
                                 id="last-name"
+                                name="last-name"
                                 placeholder="Chivalric"
                                 className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
                             />
@@ -55,7 +60,8 @@ export default function Contact() {
                         Company
                         <input
                             type="text"
-                            id="last-name"
+                            id="company"
+                            name="company"
                             placeholder="Acme Inc."
                             className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
                         />
@@ -65,6 +71,7 @@ export default function Contact() {
                         <input
                             type="email"
                             id="email"
+                            name="email"
                             placeholder="john@chivalric.agency"
                             className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
                         />
@@ -74,6 +81,7 @@ export default function Contact() {
                         <input
                             type="text"
                             id="budget"
+                            name="budget"
                             placeholder="$1,000"
                             className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
                         />
@@ -82,6 +90,7 @@ export default function Contact() {
                         Details
                         <textarea
                             id="details"
+                            name="details"
                             placeholder="Let us know what you need for your community"
                             className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
                             rows={3}
@@ -98,6 +107,6 @@ export default function Contact() {
                     />
                 </form>
             </div>
-        </div>
+        </section>
     );
 }
