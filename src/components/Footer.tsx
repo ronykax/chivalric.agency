@@ -28,8 +28,8 @@ export default function Footer() {
             <div className="flex justify-center">
                 <ul className="flex gap-1">
                     {socials.map((item, index) => (
-                        <li className="" key={index}>
-                            <a href={item.url} aria-label={item.alt}>
+                        <li key={index}>
+                            <a href={item.url} target="_blank" aria-label={item.alt}>
                                 <Button
                                     color="white"
                                     size="rg"

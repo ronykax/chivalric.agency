@@ -39,11 +39,11 @@ export async function POST(req: Request) {
         });
 
         // return NextResponse.json({ message: "Success" }, { status: 200 });
-        return NextResponse.redirect(new URL("/", req.url));
+        return NextResponse.redirect(new URL("/"));
     } catch (err) {
         console.error(err);
         // return NextResponse.json({ message: "Error" }, { status: 500 });
-        return NextResponse.redirect(new URL("/", req.url));
+        return NextResponse.redirect(new URL("/"));
         // return NextResponse.redirect("/");
     }
 }
