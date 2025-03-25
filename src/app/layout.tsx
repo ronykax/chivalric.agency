@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         title: "Chivalric Agency",
         description:
             "Chivalric is a full-service social media management agency specializing in creating and maintaining online spaces here on the internet. We transform your online presence into a thriving and engaging community.",
-        images: ["/chivalric-logo.png"],
+        images: ["/branding/chivalric-logo.png"],
     },
 };
 
