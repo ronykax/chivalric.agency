@@ -12,9 +12,9 @@ export default function Navbar() {
 
     return (
         <div className="fixed z-40 w-full border-black border-b-2">
-            <div className="px-4 py-4 bg-brand  text-black flex items-center justify-between">
+            <div className="px-4 py-4 bg-brand text-black flex items-center justify-between">
                 <img
-                    className="h-8 w-auto"
+                    className="h-16 w-auto"
                     src="/branding/chivalric-wtrmrk-no.svg"
                     alt="logo"
                 />
@@ -33,7 +33,7 @@ export default function Navbar() {
                                             label={item.label}
                                             style="secondary"
                                             color="white"
-                                            size="rg"
+                                            size="lg"
                                         />
                                     </a>
                                 )
@@ -43,7 +43,7 @@ export default function Navbar() {
                                 label="Get in touch"
                                 style="primary"
                                 color="black"
-                                size="rg"
+                                size="lg"
                                 icon={<ArrowRight />}
                             />
                         </a>

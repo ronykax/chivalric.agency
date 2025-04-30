@@ -30,15 +30,14 @@ export const items: Item[] = [
         url: "#",
     },
     {
+        label: "Terms",
+        icon: Script,
+        url: "/terms",
+    },
+    {
         label: "Services",
         icon: Growth,
         url: "#services",
-        showOnDesktop: true,
-    },
-    {
-        label: "Portfolio",
-        icon: SuitcaseWork,
-        url: "#portfolio",
         showOnDesktop: true,
     },
     // {
@@ -53,9 +52,10 @@ export const items: Item[] = [
         url: "/privacy",
     },
     {
-        label: "Terms",
-        icon: Script,
-        url: "/terms",
+        label: "Portfolio",
+        icon: SuitcaseWork,
+        url: "#portfolio",
+        showOnDesktop: true,
     },
 ];
 
@@ -73,7 +73,7 @@ export const socials: Social[] = [
     {
         alt: "Discord",
         icon: Discord,
-        url: "https://discord.gg/eZaZrU4rUb",
+        url: "https://discord.gg/PmXwNKw84d",
     },
     {
         alt: "Behance",

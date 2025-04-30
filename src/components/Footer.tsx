@@ -9,10 +9,12 @@ export default function Footer() {
                 src="/branding/chivalric-wtrmrk-no.svg"
                 alt="logo"
             />
+
             <div className="flex flex-col gap-4 m:flex-row m:justify-between">
                 <span className="font-garamond text-lg leading-lg">
                     All Rights Reserved ©<span className="m:block">2025</span>
                 </span>
+
                 <div className="mt-4 grid gap-4 gap-x-4 m:grid-cols-2">
                     {items.map((item, index) => (
                         <a
@@ -25,11 +27,16 @@ export default function Footer() {
                     ))}
                 </div>
             </div>
+
             <div className="flex justify-center">
                 <ul className="flex gap-1">
                     {socials.map((item, index) => (
                         <li key={index}>
-                            <a href={item.url} target="_blank" aria-label={item.alt}>
+                            <a
+                                href={item.url}
+                                target="_blank"
+                                aria-label={item.alt}
+                            >
                                 <Button
                                     color="white"
                                     size="rg"

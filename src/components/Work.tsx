@@ -18,7 +18,7 @@ export default function Work() {
                 </div>
             </div>
 
-            <div className="flex px-12 pb-12 t:px-48 gap-6 overflow-x-scroll no-scrollbar">
+            <div className="flex px-12 pb-12 t:px-48 gap-6 overflow-x-auto">
                 <WorkCard url="https://www.behance.net/gallery/205987147/modMAIL-Branding-Logo-Design" name="modMAIL" thumbnail="/work/modMAIL.png" />
                 <WorkCard url="https://www.behance.net/gallery/207718641/Indie-Watchlist-Newsletter-Brand-Identity" name="Indie Watchlist" thumbnail="/work/indie-watchlist.png" />
                 <WorkCard url="https://www.behance.net/gallery/219377637/Avalon-Branding-Logo-Design" name="Avalon" thumbnail="/work/avalon.png" />

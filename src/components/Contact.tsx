@@ -4,12 +4,6 @@ import Button from "./Button";
 import ArrowRight from "./icons/arrow-right";
 
 export default function Contact() {
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-
-        await fetch("/api/send", { method: "POST" });
-    };
-
     return (
         <section id="contact" className="bg-brand flex flex-col">
             <div className="flex flex-col gap-6 p-12 t:px-48">
@@ -43,6 +37,7 @@ export default function Contact() {
                                 name="first-name"
                                 placeholder="John"
                                 className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
+                                required
                             />
                         </label>
                         <label className="font-league text-lg uppercase w-full">
@@ -53,6 +48,7 @@ export default function Contact() {
                                 name="last-name"
                                 placeholder="Chivalric"
                                 className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
+                                required
                             />
                         </label>
                     </div>
@@ -64,6 +60,7 @@ export default function Contact() {
                             name="company"
                             placeholder="Acme Inc."
                             className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
+                            required
                         />
                     </label>
                     <label className="font-league text-lg uppercase">
@@ -74,6 +71,7 @@ export default function Contact() {
                             name="email"
                             placeholder="john@chivalric.agency"
                             className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
+                            required
                         />
                     </label>
                     <label className="font-league text-lg uppercase">
@@ -84,6 +82,7 @@ export default function Contact() {
                             name="budget"
                             placeholder="$1,000"
                             className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
+                            required
                         />
                     </label>
                     <label className="font-league text-lg uppercase">
@@ -94,6 +93,7 @@ export default function Contact() {
                             placeholder="Let us know what you need for your community"
                             className="w-full mt-0.5 border-2 border-black border-opacity-25 px-4 py-3 font-garamond"
                             rows={3}
+                            required
                         ></textarea>
                     </label>
                     <Button

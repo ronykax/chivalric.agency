@@ -28,8 +28,7 @@ export async function POST(req: Request) {
 > ### BUDGET:
 - ${budget}
 > ### DETAILS:
-- ${details}`,
-
+${details}`,
         };
 
         await fetch(webhookURL, {
@@ -38,12 +37,9 @@ export async function POST(req: Request) {
             body: JSON.stringify(payload),
         });
 
-        // return NextResponse.json({ message: "Success" }, { status: 200 });
-        return NextResponse.redirect(new URL("/"));
+        return NextResponse.redirect(new URL("/", req.url));
     } catch (err) {
         console.error(err);
-        // return NextResponse.json({ message: "Error" }, { status: 500 });
-        return NextResponse.redirect(new URL("/"));
-        // return NextResponse.redirect("/");
+        return NextResponse.json({ message: "Error" }, { status: 500 });
     }
 }

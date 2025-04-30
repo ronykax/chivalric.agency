@@ -22,7 +22,7 @@ export default function Services() {
                 </div>
             </div>
 
-            <div className="flex px-12 t:px-48 pb-12 gap-12 overflow-x-scroll overflow-hidden no-scrollbar text-white">
+            <div className="flex px-12 t:px-48 pb-12 gap-12 overflow-x-auto text-white">
                 <ServiceCard
                     heading="Management"
                     description="Our team will provide a comprehensive range of methods to help build and elevate your social media presence. Featuring user engagement and user growth strategies, our expertise ensures your social media page will be guided into a thriving and diverse online community."
@@ -43,7 +43,7 @@ export default function Services() {
                 />
                 <ServiceCard
                     heading="Web Design/Dev"
-                    description="A competent website is crucial for any company’s success. We focus on creating intuitive and aesthetically pleasing interfaces. From wireframing and prototyping to development. We make sure your site is responsive, interactive, stunning, and provides an enjoyable experience for your audience that captivates users and keeps them coming back!"
+                    description="A competent website is crucial for any company's success. We focus on creating intuitive and aesthetically pleasing interfaces. From wireframing and prototyping to development. We make sure your site is responsive, interactive, stunning, and provides an enjoyable experience for your audience that captivates users and keeps them coming back!"
                     icon={<Devices />}
                     bg="/branding/service-card-web.png"
                 />
