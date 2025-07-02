@@ -15,7 +15,7 @@ export async function POST(req: Request) {
         const webhookURL = process.env.DISCORD_WEBHOOK_URL || "";
 
         const payload = {
-            content: `A submission has just been made <@751092600890458203>
+            content: `A submission has just been made <@536705572540645396>
 
 > ### FIRST NAME:
 - ${first}
